@@ -131,10 +131,11 @@ so don't use the variable newEngland inside your function.
 newEngland = ["Maine","New Hampshire","Vermont", "Rhode Island", 
 "Massachusetts","Connecticut"]
 
+# THiS WORKS FINE FOR BOTH NUMBERS AND STRING VALUES
 def problem2_3(ne):
-    for state in ne:
-        print(state, "has", len(state), "letters.")
-
+    count = len(ne)
+    for state in range(0, count):
+        print(ne[state], "has", len(str(ne[state])), "letters.")
     
 #%%
 """
